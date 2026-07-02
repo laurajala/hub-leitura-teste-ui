@@ -23,7 +23,7 @@ Projeto de automação de testes E2E desenvolvido com Cypress para validar o for
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/hub-leitura-teste-ui.git
+git clone https://github.com/laurajala/hub-leitura-teste-ui.git
 ```
 
 2. Instale as dependências:
