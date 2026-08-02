@@ -25,14 +25,14 @@ describe('funcionalidade: Busca no catálogo', () => {
         })
     });
 
-    it.only('Deve validar todos os livros da Lista', () => {
+    it('Deve validar todos os livros da Lista', () => {
         cy.fixture('livros').then((catalogo) => {
             catalogo.forEach(item => {
                 cy.get('#search-input').clear().type(item.livro)
-                 cy.get('.card-title').should('contain', item.livro)
-               
+                cy.get('.card-title').should('contain', item.livro)
+
             })
         })
-         });
+    });
 
 });
