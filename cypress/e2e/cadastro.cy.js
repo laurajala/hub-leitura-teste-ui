@@ -61,12 +61,10 @@ describe('funcionalidade: Cadastro no Hub de Leitura', () => {
 
     });
 
-    it.only('Deve Validar mensagem de erro ao tentar cadastrar sem preencher nome', () => {
-        cadastroPage.preencherCadastro('','teste@teste.com','67912334567','senha123','senha123')
-        cy.get(':nth-child(1) > .invalid-feedback').should('contain','Nome deve ter pelo menos 2 caracteres')
+    it('Deve Validar mensagem de erro ao tentar cadastrar sem preencher nome', () => {
+        cadastroPage.preencherCadastro('', 'teste@teste.com', '67912334567', 'senha123', 'senha123')
+        cy.get(':nth-child(1) > .invalid-feedback').should('contain', 'Nome deve ter pelo menos 2 caracteres')
 
-
-        
     })
 
 
