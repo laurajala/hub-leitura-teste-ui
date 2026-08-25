@@ -1,17 +1,26 @@
 {
   "name": "hub-leitura-teste-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automacao de testes E2E do Hub de Leitura utilizando Cypress, JavaScript e Faker.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/laurajala/hub-leitura-teste-ui.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cypress",
+    "test-automation",
+    "e2e-testing",
+    "quality-assurance",
+    "javascript",
+    "faker"
+  ],
+  "author": "Laura Ajala",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
