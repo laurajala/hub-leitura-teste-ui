@@ -1,5 +1,7 @@
 # 📚 Hub de Leitura — Automação de Testes
 
+[![Cypress Tests](https://github.com/laurajala/hub-leitura-teste-ui/actions/workflows/pipeline.yml/badge.svg)](https://github.com/laurajala/hub-leitura-teste-ui/actions/workflows/pipeline.yml)
+
 Projeto de **automação de testes web** desenvolvido para validar as principais funcionalidades do **Hub de Leitura**, utilizando **Cypress e JavaScript**.
 
 O projeto contempla testes funcionais e **End-to-End (E2E)**, aplicando boas práticas de automação como **Page Object, Custom Commands, geração de dados dinâmicos com Faker e massa de dados com Fixtures**.
