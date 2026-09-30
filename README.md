@@ -108,13 +108,22 @@ cd hub-leitura-teste-ui
 npm install
 ```
 
-### 4. Inicie o Hub de Leitura localmente
+### 4. Inicie a aplicação Hub de Leitura
 
-A aplicação utilizada pelos testes deve estar disponível em:
+Os testes são executados sobre o [Hub de Leitura](https://github.com/EBAC-QE/hub-de-leitura-integrado), sistema educacional de biblioteca disponibilizado pela EBAC.
 
-```text
-http://localhost:3000
+Em outra janela do terminal, fora da pasta deste projeto:
+
+```bash
+git clone https://github.com/EBAC-QE/hub-de-leitura-integrado.git
+cd hub-de-leitura-integrado
+npm install
+npm start
 ```
+
+A aplicação ficará disponível em `http://localhost:3000`, endereço configurado como `baseUrl` no `cypress.config.js`.
+
+> Mantenha o servidor em execução enquanto os testes rodam. Caso contrário, o Cypress exibirá o erro *"Cypress could not verify that this server is running"*.
 
 ### 5. Abra o Cypress
 
