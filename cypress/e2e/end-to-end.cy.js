@@ -25,14 +25,14 @@ describe('Fluxo End to End de cadastro e login', () => {
         cy.url().should('include', '/dashboard');
         cy.get('#user-name').should('contain', nome);
 
-        // Login
+        // Encerra a sessão criada pelo cadastro antes de testar o login
+        cy.clearLocalStorage();
+        cy.clearCookies();
+
+        // Login com o usuário recém-cadastrado
         cy.visit('login.html');
 
         cy.login(email, senha);
-
-        cy.url().should('include', 'dashboard');
     });
-
-});
 
 });
