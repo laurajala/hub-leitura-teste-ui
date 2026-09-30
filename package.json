@@ -27,7 +27,7 @@
     "url": "https://github.com/laurajala/hub-leitura-teste-ui/issues"
   },
   "homepage": "https://github.com/laurajala/hub-leitura-teste-ui#readme",
-  "dependencies": {
+  "devDependencies": {
     "@faker-js/faker": "^10.5.0",
     "cypress": "^15.18.0"
   }
